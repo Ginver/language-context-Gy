@@ -24,7 +24,7 @@ nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-basis: 400px;
+    flex-basis: 500px;
     flex-shrink: 1;
     margin: 0 30px;
 }
