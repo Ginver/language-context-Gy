@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Opdrachtbeschrijving
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Inleiding
+Bob en Betsy hebben een website over planten en willen deze graag in zowel Spaans als Nederlands aanbieden. De gebruiker moet door het vlag-icoontje op de website van taal kunnen wisselen.
+Alle vertalingen hebben zij gelukkig al voor je gemaakt. Gezien jij al super veel hebt geleerd over React, weet je dat je dit het beste kunt oplossen met React Context.
 
-## Available Scripts
+Je besluit Bob en Betsy te helpen.
 
-In the project directory, you can run:
+Het project is opgezet met [Create React App](https://github.com/facebook/create-react-app).
 
-### `npm start`
+## Eindresultaat
+Je zult niets veranderen aan de styling - alleen aan de content. De website ziet er in het Nederlands zo uit:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![Eindresultaat](src/assets/screenshot.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## De applicatie starten
+Als je het project gecloned hebt naar jouw locale machine, installeer je eerst de node_modules door het volgende commando in de terminal te runnen:
 
-### `npm test`
+`npm install`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Wanneer dit klaar is, kun je de applicatie starten met behulp van:
 
-### `npm run build`
+`npm start`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+of gebruik de WebStorm knop (npm start). Open http://localhost:3000 om de pagina in de browser te bekijken. 
+Begin met het maken van wijzigingen in `src/App.js`: elke keer als je een bestand opslaat, zullen de wijzigingen te zien zijn op de webpagina.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Randvoorwaarden
+* Als de taal op 'Nederlands' staat, zijn alle teksten op de website het Nederlands.
+* Als de taal op 'Spaans staat', zijn alle teksten op de website het Spaans.
+* De gebruiker kan de taal wisselen door op de vlag in de header te klikken. De taal wordt dan aangepast doormiddel van context. Als de huidige taal op 'Spaans' staat, 
+ziet de gebruiker 'Wissel taal naar [nederlandse vlag]'. Staat de taal op 'Nederlands', dan staat er: 'Cambiar el idioma a [spaanse vlag]'.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Plan de campagne
+* Boven ieder component of pagina die tekst gebruikt, staat een `content`-object met daarin zowel de Nederlandse als de Spaanse tekst. Hier ga je tussen wisselen op basis van de
+taal die via context wordt ingesteld.
+* Maak eerst een aparte file om jouw context in te maken. Geef jouw context een descriptieve naam.
+* Maak een context-provider component. Deze gebruikt state om de taal en de taal-setter functie in bij te houden.
+* Gebruik het context-provider component en wrap deze om alle componenten heen die context nodig hebben
+* Zorg dat alle pagina's die context weergeven, toegang hebben tot de data die in de context is geplaatst.
