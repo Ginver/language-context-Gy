@@ -1,0 +1,70 @@
+{
+  "nl": {
+    "aboutUs": {
+      "title": "Over ons",
+      "writers":"Wij, Bob en Betsy, zijn altijd al plantenliefhebbers geweest. We hebben daarom heel bewust een groter huis gekocht zodat we er nog meer planten in kunnen zetten, want het loopt een beetje uit de hand. We hebben wel lekker veel zuurstof binnen. Wij vinden het leukst om tropische planten te houden, want die hebben veel zorg nodig in een Nederlands klimaat. We gaan ieder jaar 4 keer naar Spanje om daar op plantjesjacht te gaan."
+    },
+    "plants": {
+      "title": "Alle planten",
+      "text": "Wij houden nog veel meer planten dan hieronder beschreven staan, maar dit zijn wel de bomen  waar we het meest trots op zijn. Vooral omdat we ze allemaal in onze woonkamer staan en dat is best krap.",
+      "plants": [
+        "Hartbladige els",
+        "Zwarte els",
+        "Witte els",
+        "Japanse Kaukasische boom",
+        "Chinese berk",
+        "Papierberk",
+        "Witte Himalayaberk of Himalayaberk",
+        "Boomhazelaar of Turkse hazelaar",
+        "Lambertsnoot"
+      ]
+    },
+    "home": {
+      "title": "Planten zijn een verreiking voor je huis",
+      "introText": "Planten zijn organismen die zich niet kunnen voortbewegen en die fotosynthese vertonen. De naam Plantae wordt niet meer voor een taxonomische eenheid gebruikt. Bij de uitdrukking planten en bloemen gaat het in het gewone spraakgebruik vaak om kruidachtige soorten van de bedektzadigen (Angiospermae), bijvoorbeeld sierplant, kamerplant, tuinplant, kuipplant, potplant, snijbloemen. Deze worden dan voor een deel tegenover de houtige planten zoals de struiken en bomen geplaatst. Samen vormen deze slechts een klein deel van de Viridiplantae."
+    },
+    "header": {
+      "menuItems": {
+        "aboutUs": "Over ons",
+        "allPlants": "Alle planten",
+        "experience": "Persoonlijke ervaringen"
+      },
+      "changeTo": "Cambiar el idioma a",
+      "title": "Planten voor iedereen!"
+    }
+  },
+  "es": {
+    "aboutUs": {
+      "title": "Sobre nosotros",
+      "writers": "Nosotros, Bob y Betsy, siempre hemos sido amantes de las plantas. Por lo tanto, compramos deliberadamente una casa más grande para poder poner aún más plantas en ella, porque se está saliendo un poco de control. Tenemos mucho oxígeno adentro. Preferimos mantener plantas tropicales, porque requieren mucho cuidado en un clima holandés. Cada año vamos a España 4 veces a cazar plantas allí."
+    },
+    "plants": {
+      "title": "Todos las plantas",
+      "text": "Conservamos muchas más plantas de las que se describen a continuación, pero estos son los árboles de los que estamos más orgullosos. Sobre todo porque los tenemos todos en nuestra sala de estar y eso es bastante ajustado.",
+      "plants": [
+        "Aliso de hojas de corazón",
+        "Aliso negro",
+        "Aliso blanco",
+        "Árbol caucásico japonés",
+        "Abedul chino",
+        "Abedul de papel",
+        "Abedul blanco del Himalaya o abedul del Himalaya",
+        "Tree Hazel o Turkish Hazel",
+        "Nuez de Lambert"
+      ]
+    },
+    "home": {
+      "title": "Las plantas son una extensión de tu hogar",
+      "introText": "Las plantas son organismos que no pueden moverse y que exhiben fotosíntesis. El nombre Plantae ya no se usa para una unidad taxonómica. En el uso común, el término plantas y flores a menudo se refiere a especies herbáceas de la planta con flores (Angiospermae), por ejemplo, planta ornamental, planta de interior, planta de jardín, planta de contenedor, planta de maceta, flores cortadas. Luego, estos se colocan parcialmente frente a las plantas leñosas, como arbustos y árboles. Juntos, estos constituyen solo una pequeña parte de Viridiplantae."
+    },
+    "header": {
+      "menuItems": {
+        "aboutUs": "Sobre nosotros",
+        "allPlants": "todas las plantas",
+        "experience": "Experiencias personales"
+      },
+      "changeTo": "Wissel taal naar",
+      "title": "Plantas para todos!"
+    }
+  }
+}
