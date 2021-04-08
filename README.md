@@ -32,8 +32,8 @@ Begin met het maken van wijzigingen in `src/App.js`: elke keer als je een bestan
 ziet de gebruiker 'Wissel taal naar [nederlandse vlag]'. Staat de taal op 'Nederlands', dan staat er: 'Cambiar el idioma a [spaanse vlag]'.
 
 ## Plan de campagne
-* Boven ieder component of pagina die tekst gebruikt, staat een `content`-object met daarin zowel de Nederlandse als de Spaanse tekst. Hier ga je tussen wisselen op basis van de
-taal die via context wordt ingesteld.
+* Ieder component of pagina die tekst gebruikt, importeert het content JSON bestand. Daarin staan zowel de keys "nl" als "es", maar de onderliggende object properties zijn exact hetzelfde.
+Op basis van die taal-property krijg je een Nerlandse of Spaanse tekst. Probeer het maar eens! Hier ga je tussen wisselen op basis van de taal die via context wordt ingesteld.
 * Maak eerst een aparte file om jouw context in te maken. Geef jouw context een descriptieve naam.
 * Maak een context-provider component. Deze gebruikt state om de taal en de taal-setter functie in bij te houden.
 * Gebruik het context-provider component en wrap deze om alle componenten heen die context nodig hebben
