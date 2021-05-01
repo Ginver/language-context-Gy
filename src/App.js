@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,8 +9,13 @@ import Home from './pages/home/Home';
 import AboutUs from './pages/aboutUs/AboutUs';
 import AllPlants from './pages/allPlants/AllPlants';
 
+
 function App() {
+
   return (
+
+
+
     <Router>
         <Header />
         <Switch>
@@ -25,6 +30,8 @@ function App() {
           </Route>
         </Switch>
     </Router>
+
+
   );
 }
 

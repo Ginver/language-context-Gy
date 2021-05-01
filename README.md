@@ -38,3 +38,46 @@ Op basis van die taal-property krijg je een Nerlandse of Spaanse tekst. Probeer 
 * Maak een context-provider component. Deze gebruikt state om de taal en de taal-setter functie in bij te houden.
 * Gebruik het context-provider component en wrap deze om alle componenten heen die context nodig hebben
 * Zorg dat alle pagina's die context weergeven, toegang hebben tot de data die in de context is geplaatst.
+
+## Stappenplan
+Benodigheden:
+* context ( 'LanguageContext' )
+* in die context beschikbaar: geselecteerde taal ("nl" / "es")
+* in die context beschikbaar: taal-verander functie ('toggleLanguage') zodat we vanuit 
+stappen:
+1. 'LanguageContext' context maken in een apart bestandje en exporteren
+2. 'LanguageContext' importeren in App.js 
+3. we maekn gebruik van de 'LanguageContext.Provider' en wikkelen dit als component in App.js heen
+4. via de 'value' property een data object in de context plaatsen ('const data = { test: "test" }')
+5. kies een pagina en abonneer die op onze 'LanguageContext'
+    - importeer 'LanguageContext'
+    - useContext functie importeren uit React en aanroepen met de 'LanguageContext'
+    - we destructuren de 'test' property uit de (data) object die we nodig hebben
+    - gebruik de data die in 'test' staat in eht component: '<p>{test}</p>'
+6. Werkt dit? Dan kunnen we verder.
+7. Maak op de plek waar jouw data objetct staat (App.js) een stukje state aan voor 'language, toggleLanguage'
+8. Maak daar (App.js) een aparte functie die bij aanroep (doormiddel van de toggleLanguage-functie) de taal op Nederlands zet
+9. Maak daar (App.js) een aparte functie die bij aanroep (doormiddel van de toggleLanguage-functie) de taal op Spaans zet
+10. Stop de twee functies én language in dat data object
+   const [language, toggleLanguage] = useState('nl');
+      function setNl() {
+      toggleLanguage('nl')
+      }
+      function setEs() {
+      toggleLanguage('es')
+      }
+       const data = {
+      activeLanguage: language,
+      setNlFunction: setNl,
+      setEsFunction: setEs,
+      }
+   Test of je de actieve taal vanuit een pagina uit de context kunt halen en in de console kunt loggen! (zoals stap 5)
+   Zorg ervoor dat op iedere pagina de juiste content wordt weergeven op basis van de actieve taal
+   Zorg ervoor dat je met een knopje in de header van taal kunt wisselen
+   (en dat er dus ook een andere vlag wordt weergegeven)
+   Maak een apart component van de Provider!
+   Kopieer de hele function App() uit App.js en plak dit in het context bestand
+   Verander de naam App naar LanguageContextProvider en voeg de children property toe
+   Vervang de huidige componten in deze functie door de children property
+   Exporteer deze functie
+   Wikkel het nieuwe LanguageContextProvider component om <App /> in index.js
