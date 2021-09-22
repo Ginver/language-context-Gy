@@ -1,7 +1,7 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import writers from '../../assets/bob_betsy.jpg';
 import content from '../../data/content.json';
-import  {LanguageContext} from '../../context/LanguageContext';
+import  { LanguageContext } from '../../context/LanguageContext';
 
 function AboutUs() {
     const  { activeLanguage } = useContext(LanguageContext);
