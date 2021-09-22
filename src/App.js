@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,8 +13,6 @@ import AllPlants from './pages/allPlants/AllPlants';
 function App() {
 
   return (
-
-
 
     <Router>
         <Header />

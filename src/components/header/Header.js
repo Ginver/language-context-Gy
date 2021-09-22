@@ -29,8 +29,7 @@ function Header() {
             <li className="language-switch">
               <p>{content[activeLanguage].header.changeTo}</p>
 
-              {activeLanguage === 'nl' ?
-                  <button type="button" onClick={setEs}><FlagES/></button>
+              {activeLanguage === 'nl' ? <button type="button" onClick={setEs}><FlagES/></button>
                   :
                   <button type="button" onClick={setNl}><FlagNL/></button>}
 
